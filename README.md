@@ -7,7 +7,7 @@ Este projeto é um jogo interativo que combina **Arduino**, **Python**, **MediaP
 
 ## 🧠 Conceito
 
-O jogador é desafiado com perguntas que exigem a execução de gestos específicos com as mãos. Se o gesto estiver correto, o Arduino responde com LEDs e som, simulando a liberação de um portão. O jogo integra visão computacional com feedback físico.
+O jogador é desafiado com charadas que exigem a execução de gestos específicos com as mãos. Se o gesto estiver correto, o Arduino responde com LEDs e som, simulando a liberação de um portão. O jogo integra visão computacional com feedback físico.
 
 ---
 
@@ -39,13 +39,12 @@ Ao finalizar corretamente o desafio, o nosso objetivo seria tocar a música do b
 ## 🧩 Regras do Jogo
 
 1. O sistema sorteia perguntas como:
-   - "Qual o sinal da paz?"
-   - "Sinal de joinha?"
+   - "Qual o sinal do Bob Marley?"
+   - "Sinal de quando você curte um vídeo?"
 2. O jogador deve fazer o gesto correspondente.
-3. Ao acertar, LEDs mudam e o Arduino toca sons ou muda etapas.
-4. Ao errar, o jogo reinicia com novas perguntas.
-5. Ao concluir com sucesso o desafio o buzzer emite sons.
-6. O servo motor inicia seu movimento assim que o desafior for concluido juntamente ao buzzer.
+3. Ao acertar, LEDs mudam, indicando o progresso do jogador.
+4. Ao concluir com sucesso o desafio o buzzer emite o som da vitória.
+5. O servo motor inicia seu movimento, simulando a abertura do portão mágico.
 
 ---
 
@@ -63,30 +62,24 @@ O código Python usa a webcam para detectar a mão do jogador e reconhece os seg
 
 | Gesto       | Configuração dos dedos |
 |-------------|------------------------|
-| `peace`     | ✌ (dedos 2 e 3 levantados) |
-| `thumbs_up` | 👍 (só polegar levantado) |
+| `paz`     | ✌ (dedos 2 e 3 levantados) |
+| `joinha` | 👍 (só polegar levantado) |
 | `hangloose` | 🤙 (polegar e mindinho) |
-| `open`      | ✋ (todos os dedos)     |
+| `five`      | ✋ (todos os dedos)     |
 
 ---
 
 ## 🖥️ Como Usar
 
-1. Monte o circuito no Arduino com os LEDs e buzzer.
+1. Monte o circuito no Arduino com os LEDs e buzzer, de acordo com o código.
 2. Faça o upload do código `.ino` usando o Arduino IDE.
-3. Instale os pacotes Python com:
+3. Instale o Anaconda para gerenciar as dependências do Python, instalando os pacotes necessários
 
    ```bash
    pip install opencv-python mediapipe pyserial
    ```
 
-4. Rode o código Python:
-
-   ```bash
-   python jogo_gestos.py
-   ```
-
-5. Responda as perguntas fazendo os gestos certos para liberar o portão!
+4. Responda as perguntas fazendo os gestos certos para liberar o portão!
 
 ---
 
@@ -106,10 +99,9 @@ Projeto_Arduino_Gestos/
 
 ## 🚀 Futuras Implementações
 
-- Servo motor para simular fisicamente o portão.
+- Estrutura real de um portão medieval.
 - Mais perguntas e reconhecimento de outros gestos.
-- Interface gráfica com botões e feedback visual.
-- Integração com pontuação ou fases do jogo.
+- Integração com pontuação e fases do jogo.
 
 ---
 
