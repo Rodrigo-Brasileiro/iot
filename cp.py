@@ -34,9 +34,9 @@ def reconhecer_gesto(hand_landmarks):
     # Interpretação de gestos com base nos dedos levantados
     if dedos == [0, 1, 1, 0, 0]:
         return "paz"
-    elif dedos == [0, 0, 0, 0, 1]:
+    elif dedos == [1, 0, 0, 0, 0]:
         return "joinha"
-    elif dedos == [0, 1, 0, 0, 1]:
+    elif dedos == [1, 0, 0, 0, 1]:
         return "hangloose"
     elif dedos == [1, 1, 1, 1, 1]:
         return "five"
