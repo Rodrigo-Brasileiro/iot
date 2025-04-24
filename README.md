@@ -81,21 +81,6 @@ O código Python usa a webcam para detectar a mão do jogador e reconhece os seg
 
 4. Responda as perguntas fazendo os gestos certos para liberar o portão!
 
----
-
-## 📂 Estrutura do Projeto
-
-```
-Projeto_Arduino_Gestos/
-│
-├── arduino_code/
-│   └── jogo_interativo.ino
-├── python_interface/
-│   └── jogo_gestos.py
-├── README.md
-```
-
----
 
 ## 🚀 Futuras Implementações
 
