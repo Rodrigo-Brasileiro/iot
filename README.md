@@ -20,6 +20,7 @@ O jogador é desafiado com charadas que exigem a execução de gestos específic
 - 1 Servo motor 
 - Protoboard e jumpers
 - Cabo USB
+- Fios macho-macho
 
 ### Software:
 - Python 3
@@ -27,6 +28,7 @@ O jogador é desafiado com charadas que exigem a execução de gestos específic
 - MediaPipe
 - Biblioteca Serial (`pyserial`)
 - Arduino IDE
+- Anaconda navigator
 
 ---
 
@@ -73,18 +75,18 @@ O código Python usa a webcam para detectar a mão do jogador e reconhece os seg
 
 1. Monte o circuito no Arduino com os LEDs e buzzer, de acordo com o código.
 2. Faça o upload do código `.ino` usando o Arduino IDE.
-3. Instale o Anaconda para gerenciar as dependências do Python, instalando os pacotes necessários
+3. Instale o Anaconda navigator para gerenciar as dependências do Python, instalando os pacotes necessários no prompt de comando.
 
    ```bash
    pip install opencv-python mediapipe pyserial
    ```
 
-4. Responda as perguntas fazendo os gestos certos para liberar o portão!
+4. Inicie o projeto via vscode do Anaconda e responda as perguntas fazendo os gestos certos para liberar o portão!
 
 
 ## 🚀 Futuras Implementações
 
-- Estrutura real de um portão medieval.
+- Estrutura de um portão.
 - Mais perguntas e reconhecimento de outros gestos.
 - Integração com pontuação e fases do jogo.
 
