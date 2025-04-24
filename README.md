@@ -90,4 +90,6 @@ O código Python usa a webcam para detectar a mão do jogador e reconhece os seg
 
 ---
 
-Desenvolvido por TechPulse Global Network
+Desenvolvido por:
+Rodrigo Brasileiro RM:98952
+Nikolas Rodrigues Moura dos Santos RM:551566
